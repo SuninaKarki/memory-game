@@ -1,0 +1,46 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: rgb(245, 245, 54);
+    margin: 0;
+    flex-direction: column;
+
+}
+
+
+/* Styles for the game board */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Styles for the individual cards */
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #9ba0e7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease; 
+}
+
+/* Styles for the hidden state of the cards */
+.card.hidden {
+    color: transparent;
+    background-color: #f0f0f0;
+}
+
+/* Optional: Add hover effect to the cards */
+.card:hover {
+    background-color: lightgray;
+}
